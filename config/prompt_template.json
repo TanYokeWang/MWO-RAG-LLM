@@ -1,0 +1,26 @@
+{
+    "base" : [
+        "You are a strict maintenance text classifier. Your task is to classify the maintenance work texts based on the component category.",
+        "You should prioritise the main principle component affected rather than the subcomponents when making the classification.",
+        "Text: {text}",
+        "Allowed categories: {labels}",
+        "Return ONLY one of the category labels without any explanations or additional text."
+    ]
+,
+    "RAG_prompt" : [
+        "You are a strict maintenance category classifier.",
+        "Your task is to classify the maintenance work texts based on their maintenance category.\n",
+        "Text: {text}\nAllowed categories: {labels}",
+        "Additional context:",
+        "{context[0]}",
+        "{context[1]}",
+        "{context[2]}",
+        "Return ONLY one of the category labels without any explanations or additional text." 
+]
+}
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+ipykernel
+python-dotenv
+pandas
+scikit-learn
+numpy
+seaborn
+openai
+ollama
+sentence_transformers
+matplotlib

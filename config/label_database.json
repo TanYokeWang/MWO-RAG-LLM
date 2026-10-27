@@ -1,0 +1,127 @@
+{
+    "pitch and hydraulic": {
+        "label": "pitch and hydraulic",
+        "definition": "Maintenance work related to the pitch system and hydraulic system of the wind turbine.",
+        "keywords": ["hydraulic", "pitch", "valve", "brake"],
+        "boundary" : "Prefer this when hydraulic oil, hydraulic pumps and brakes are involved, even if it also involves other components."
+    },
+
+    "blades":{
+        "label": "blades",
+        "definition": "Maintenance work related to the blades of the wind turbine.",
+        "keywords": ["blade", "edge", "trailing edge"],
+        "boundary" : "Prefer this when blades are involved, even if it involves other components."
+    }, 
+
+    "generator":{
+        "label": "generator",
+        "definition": "Maintenance work related to the generator of the wind turbine.",
+        "keywords": ["generator", "rotor", "bearing"],
+        "boundary" : "Prefer this when the generator is involved, even if it involves subcomponents that are part of the generator."
+    }, 
+
+    "gearbox":{
+        "label": "gearbox",
+        "definition": "Maintenance work related to the gearbox of the wind turbine.",
+        "keywords": ["gearbox", "gear", "swarf", "gear oil"],
+        "boundary" : "Prefer this when the gearbox is involved, even if it also involves other components such as pumps or oil."
+    }, 
+
+    "transformer":{
+        "label": "transformer",
+        "definition": "Maintenance work related to the transformer of the wind turbine.",
+        "keywords": ["transformer", "traf", "trafo"],
+        "boundary" : "Prefer this when the transformer is involved, even if it also involves other components such as electrical parts or ventilation."
+    }, 
+
+    "yaw system":{
+        "label": "yaw system",
+        "definition": "Maintenance work related to the yaw system of the wind turbine.",
+        "keywords": ["yaw"],
+        "boundary" : "Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors."
+    }, 
+
+    "power supply and converter":{
+        "label": "power supply and converter",
+        "definition": "Maintenance work related to the power supply and converter of the wind turbine.",
+        "keywords": ["power", "supply", "converter", "ups", "skii", "skii-pack", "vcs", "skiip"],
+        "boundary" : "Prefer this when the power supply or converter is involved, even if it also involves other electrical components."
+    },
+
+    "electrical components":{
+        "label": "electrical components",
+        "definition": "Maintenance work related to the electrical components of the wind turbine.",
+        "keywords": ["voltage", "current", "cable", "contactor", "relay", "breaker", "q6", "q7","q8", "vcp", "f60", "breaker", "lctu", "capacitor", "inverter", "coil", "circuit", "hv", "grid"],
+        "boundary" : "Maintenance work that involves electrical components, even if it also involves other mechanical components."
+    }, 
+
+    "control system":{
+        "label": "control system",
+        "definition": "Maintenance work related to the controls of the wind turbine.",
+        "keywords": ["control", "ctrl", "frequency", "logic", "synchronize", "communication", "software", "upgrade", "controller", "module", "feedback"],
+        "boundary" : "Prefer this label when the control of wind turbine is involved, especially when it involves software or communication aspects."
+    }, 
+
+    "hub":{
+        "label": "hub",
+        "definition": "Maintenance work related to the hub of the wind turbine.",
+        "keywords": ["hub"],
+        "boundary" : "Prefer this label when the maintenance work is carried out at the hub."
+    },
+    
+    "pumps and motors":{
+        "label": "pumps and motors",
+        "definition": "Maintenance work related to the pumps and motors in the wind turbine.",
+        "keywords": ["pump", "motor"],
+        "boundary" : "This label should be used when the maintenance work mainly involves pumps or motors, but not when it involves other components."
+    }, 
+    
+    "grease, oil and coolant":{
+        "label": "grease, oil and coolant",
+        "definition": "Maintenance work related to the grease, oil and coolant of the wind turbine components.",
+        "keywords": ["grease", "oil", "coolant"],
+        "boundary" : "This label should be used when the maintenance work mainly involves grease, oil or coolant, but not when it involves other components."
+    },  
+
+    "scheduled":{
+        "label": "scheduled",
+        "definition": "Maintenance work and inspections that have been scheduled or planned, either by the operator, preventive maintenance or 3rd party.",
+        "keywords": ["punch", "list", "annual", "service", "llyod", "audits"],
+        "boundary" : "Any punch list, annual services, main services and third party inspections should be labelled as scheduled."
+    }, 
+
+    "sensors":{
+        "label": "sensors",
+        "definition": "Maintenance work and fault involved with sensors and measurements.",
+        "keywords": ["sensor", "measurement", "transducer", "counter", "cms", "accelerometer", "temperature", "level"],
+        "boundary" : "This label is prioritized for maintenance work that involves sensors or measurement devices, even if the sensor belongs to a different component."
+    }, 
+
+    "heaters and coolers":{
+        "label": "heaters and coolers",
+        "definition": "Maintenance work related to the ventilations, heating and cooling systems in the wind turbine.",
+        "keywords": ["heater", "cooler", "ventilation", "vent", "fan", "dehumidifier", "cooling", "heating"],
+        "boundary" : "Prefer this label when maintenance involves ventilations, heating or cooling systems, unless other components were mentioned."
+    }, 
+    
+    "tower and foundation":{
+        "label": "tower and foundation",
+        "definition": "Maintenance work related to tower and foundation structures of the wind turbine.",
+        "keywords": ["tower", "foundation", "monopile", "platforms"],
+        "boundary" : "Prefer this label even if it also involves other components such as electrical components or yaw platforms."
+    }, 
+
+    "safety":{
+        "label": "safety",
+        "definition": "Maintenance work related to the safety features of the wind turbine internal or external structures.",
+        "keywords": ["safety", "guide", "support", "emergency", "light", "rail", "kit", "access", "aid"],
+        "boundary" : "Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved."
+    },
+
+    "others":{
+    "label": "others",
+    "definition": "This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text.",
+    "keywords": [],
+    "boundary" : "This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text."
+    }
+}

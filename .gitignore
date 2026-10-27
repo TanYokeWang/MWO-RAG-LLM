@@ -1,0 +1,38 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+.venv-1/
+venv/
+env/
+
+# Secrets
+.env
+
+# VSCode settings
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Outputs
+local_reports/
+outputs/
+Analysis_Compilation/
+
+# ML artifacts
+checkpoints/
+*.pkl
+*.joblib
+
+# Raw Data and Data exports
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Others
+references/

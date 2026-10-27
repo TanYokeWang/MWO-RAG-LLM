@@ -1,0 +1,37 @@
+Work Order ID,Failure Category,ServiceOrderText
+50891182,blades,defect lubrication system blade c
+52604428,blades,trouble shoot blade controller
+51305395,control system,controller feedback failed
+51856847,control system,no communication to turbine
+50634257,electrical components,replacement of rcs swich and repair cable
+50806383,electrical components,troubleshoot electrical fault
+51176101,gearbox,investigate gearoil pressure unstable
+51497254,gearbox,cold bearing gear
+50547237,generator,inspection sludge under generator
+51827530,generator,replace slip ring
+52559931,"grease, oil and coolant",lubrication error reservoir empty
+51000014,"grease, oil and coolant",replace oil hose
+51379944,heaters and coolers,"feedback error,vent fans"
+50478877,heaters and coolers,tower heater 
+50582374,hub,hub cables 
+52401036,hub,clean hub int/extreme area down
+51457790,others,paintwork on the bottom flang
+50840663,others,signal error
+50104772,pitch and hydraulic,pitch deviation/proportioning valve error
+51946975,pitch and hydraulic,actuator could not be released
+51574579,power supply and converter,ups battery error
+51822780,power supply and converter,investigate ups fault-battery error
+52331092,pumps and motors,feedback error offline pump 
+51489284,pumps and motors,replacement of offline filter pump unit
+52273123,safety,replace damaged access step
+51126357,safety,survival kit
+50808181,scheduled,3 months service 
+50908417,scheduled,24 months service 
+50054699,sensors,replace faulty ft sensor
+50648634,sensors,cms system non function
+52177964,tower and foundation,service lift bracket mid tower exchange
+52483381,tower and foundation,tower light halfway defect
+51230983,transformer,transformer inspection 
+51666247,transformer,replace mutlivolt transformer
+51388059,yaw system,yaw gear breathers/top cont door repair
+51714810,yaw system,replace damaged yaw deck ladder

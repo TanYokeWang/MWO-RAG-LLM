@@ -1,0 +1,411 @@
+ServiceOrderText,True_label,prompt,raw_output,predicted_label,status,input_tokens,output_tokens,total_duration,prompt_eval_duration,eval_duration
+defect lubrication system blade c,blades,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: defect lubrication system blade c
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+blades - Maintenance work related to the blades of the wind turbine. Prefer this when blades are involved, even if it involves other components.  keywords:  blade,edge,trailing edge
+pitch and hydraulic - Maintenance work related to the pitch system and hydraulic system of the wind turbine. Prefer this when hydraulic oil, hydraulic pumps and brakes are involved, even if it also involves other components.  keywords:  hydraulic,pitch,valve,brake
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""blades"" }",blades,Valid,277,12,6.225731,0.172022,0.258166
+trouble shoot blade controller,blades,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: trouble shoot blade controller
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+blades - Maintenance work related to the blades of the wind turbine. Prefer this when blades are involved, even if it involves other components.  keywords:  blade,edge,trailing edge
+control system - Maintenance work related to the controls of the wind turbine. Prefer this label when the control of wind turbine is involved, especially when it involves software or communication aspects.  keywords:  control,ctrl,frequency,logic,synchronize,communication,software,upgrade,controller,module,feedback
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""control system"" }",control system,Valid,308,12,0.3927616,0.109749,0.245725
+controller feedback failed,control system,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: controller feedback failed
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+control system - Maintenance work related to the controls of the wind turbine. Prefer this label when the control of wind turbine is involved, especially when it involves software or communication aspects.  keywords:  control,ctrl,frequency,logic,synchronize,communication,software,upgrade,controller,module,feedback
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""control system""
+}",control system,Valid,353,15,0.4421211,0.116454,0.283923
+no communication to turbine,control system,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: no communication to turbine
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+control system - Maintenance work related to the controls of the wind turbine. Prefer this label when the control of wind turbine is involved, especially when it involves software or communication aspects.  keywords:  control,ctrl,frequency,logic,synchronize,communication,software,upgrade,controller,module,feedback
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+blades - Maintenance work related to the blades of the wind turbine. Prefer this when blades are involved, even if it involves other components.  keywords:  blade,edge,trailing edge
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""others""
+}",others,Valid,308,14,0.4584542,0.111534,0.300248
+replacement of rcs swich and repair cable,electrical components,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: replacement of rcs swich and repair cable
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+electrical components - Maintenance work related to the electrical components of the wind turbine. Maintenance work that involves electrical components, even if it also involves other mechanical components.  keywords:  voltage,current,cable,contactor,relay,breaker,q6,q7,q8,vcp,f60,breaker,lctu,capacitor,inverter,coil,circuit,hv,grid
+pitch and hydraulic - Maintenance work related to the pitch system and hydraulic system of the wind turbine. Prefer this when hydraulic oil, hydraulic pumps and brakes are involved, even if it also involves other components.  keywords:  hydraulic,pitch,valve,brake
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""control system""
+}",control system,Valid,346,15,0.4663845,0.115582,0.309704
+troubleshoot electrical fault,electrical components,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: troubleshoot electrical fault
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+electrical components - Maintenance work related to the electrical components of the wind turbine. Maintenance work that involves electrical components, even if it also involves other mechanical components.  keywords:  voltage,current,cable,contactor,relay,breaker,q6,q7,q8,vcp,f60,breaker,lctu,capacitor,inverter,coil,circuit,hv,grid
+sensors - Maintenance work and fault involved with sensors and measurements. This label is prioritized for maintenance work that involves sensors or measurement devices, even if the sensor belongs to a different component.  keywords:  sensor,measurement,transducer,counter,cms,accelerometer,temperature,level
+transformer - Maintenance work related to the transformer of the wind turbine. Prefer this when the transformer is involved, even if it also involves other components such as electrical parts or ventilation.  keywords:  transformer,traf,trafo
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""electrical components""
+}",electrical components,Valid,327,14,0.4318341,0.112041,0.272852
+investigate gearoil pressure unstable,gearbox,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: investigate gearoil pressure unstable
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+tower and foundation - Maintenance work related to tower and foundation structures of the wind turbine. Prefer this label even if it also involves other components such as electrical components or yaw platforms.  keywords:  tower,foundation,monopile,platforms
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""gearbox""
+}",gearbox,Valid,342,14,0.4226901,0.116507,0.261339999
+cold bearing gear,gearbox,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: cold bearing gear
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+gearbox - Maintenance work related to the gearbox of the wind turbine. Prefer this when the gearbox is involved, even if it also involves other components such as pumps or oil.  keywords:  gearbox,gear,swarf,gear oil
+generator - Maintenance work related to the generator of the wind turbine. Prefer this when the generator is involved, even if it involves subcomponents that are part of the generator.  keywords:  generator,rotor,bearing
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""gearbox"" }",gearbox,Valid,300,12,0.3988564,0.108241,0.24588
+inspection sludge under generator,generator,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: inspection sludge under generator
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+generator - Maintenance work related to the generator of the wind turbine. Prefer this when the generator is involved, even if it involves subcomponents that are part of the generator.  keywords:  generator,rotor,bearing
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""generator""
+}",generator,Valid,336,14,0.4223089,0.110352,0.272657
+replace slip ring,generator,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: replace slip ring
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+tower and foundation - Maintenance work related to tower and foundation structures of the wind turbine. Prefer this label even if it also involves other components such as electrical components or yaw platforms.  keywords:  tower,foundation,monopile,platforms
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""electrical components""
+}",electrical components,Valid,340,15,0.4392206,0.111348,0.284965
+lubrication error reservoir empty,"grease, oil and coolant","You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: lubrication error reservoir empty
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""yaw system""
+}",yaw system,Valid,336,14,0.4298111,0.11382,0.26754
+replace oil hose,"grease, oil and coolant","You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: replace oil hose
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+grease, oil and coolant - Maintenance work related to the grease, oil and coolant of the wind turbine components. This label should be used when the maintenance work mainly involves grease, oil or coolant, but not when it involves other components.  keywords:  grease,oil,coolant
+gearbox - Maintenance work related to the gearbox of the wind turbine. Prefer this when the gearbox is involved, even if it also involves other components such as pumps or oil.  keywords:  gearbox,gear,swarf,gear oil
+pitch and hydraulic - Maintenance work related to the pitch system and hydraulic system of the wind turbine. Prefer this when hydraulic oil, hydraulic pumps and brakes are involved, even if it also involves other components.  keywords:  hydraulic,pitch,valve,brake
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""grease, oil and coolant"" }","grease, oil and coolant",Valid,302,16,0.4422312,0.107454,0.28891
+"feedback error,vent fans",heaters and coolers,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: feedback error,vent fans
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+control system - Maintenance work related to the controls of the wind turbine. Prefer this label when the control of wind turbine is involved, especially when it involves software or communication aspects.  keywords:  control,ctrl,frequency,logic,synchronize,communication,software,upgrade,controller,module,feedback
+heaters and coolers - Maintenance work related to the ventilations, heating and cooling systems in the wind turbine. Prefer this label when maintenance involves ventilations, heating or cooling systems, unless other components were mentioned.  keywords:  heater,cooler,ventilation,vent,fan,dehumidifier,cooling,heating
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""control system""
+}",control system,Valid,313,14,0.5253,0.108115,0.37598
+tower heater ,heaters and coolers,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: tower heater 
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+tower and foundation - Maintenance work related to tower and foundation structures of the wind turbine. Prefer this label even if it also involves other components such as electrical components or yaw platforms.  keywords:  tower,foundation,monopile,platforms
+heaters and coolers - Maintenance work related to the ventilations, heating and cooling systems in the wind turbine. Prefer this label when maintenance involves ventilations, heating or cooling systems, unless other components were mentioned.  keywords:  heater,cooler,ventilation,vent,fan,dehumidifier,cooling,heating
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""heaters and coolers""
+}",heaters and coolers,Valid,320,17,0.4568762,0.111533,0.304808
+hub cables ,hub,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: hub cables 
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+hub - Maintenance work related to the hub of the wind turbine. Prefer this label when the maintenance work is carried out at the hub.  keywords:  hub
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""hub"" }",hub,Valid,324,11,0.3881673,0.108846,0.235727
+clean hub int/extreme area down,hub,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: clean hub int/extreme area down
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+hub - Maintenance work related to the hub of the wind turbine. Prefer this label when the maintenance work is carried out at the hub.  keywords:  hub
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""hub""
+}",hub,Valid,328,14,0.4237047,0.111371,0.268036999
+paintwork on the bottom flang,others,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: paintwork on the bottom flang
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+hub - Maintenance work related to the hub of the wind turbine. Prefer this label when the maintenance work is carried out at the hub.  keywords:  hub
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""others""
+}",others,Valid,328,14,0.4674614,0.113254,0.310787
+signal error,others,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: signal error
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""yaw system""
+}",yaw system,Valid,334,14,0.4357285,0.113054,0.275579
+pitch deviation/proportioning valve error,pitch and hydraulic,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: pitch deviation/proportioning valve error
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+pitch and hydraulic - Maintenance work related to the pitch system and hydraulic system of the wind turbine. Prefer this when hydraulic oil, hydraulic pumps and brakes are involved, even if it also involves other components.  keywords:  hydraulic,pitch,valve,brake
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""pitch and hydraulic""
+}",pitch and hydraulic,Valid,306,17,0.5294403,0.110126,0.371295
+actuator could not be released,pitch and hydraulic,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: actuator could not be released
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+pumps and motors - Maintenance work related to the pumps and motors in the wind turbine. This label should be used when the maintenance work mainly involves pumps or motors, but not when it involves other components.  keywords:  pump,motor
+grease, oil and coolant - Maintenance work related to the grease, oil and coolant of the wind turbine components. This label should be used when the maintenance work mainly involves grease, oil or coolant, but not when it involves other components.  keywords:  grease,oil,coolant
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""others""
+}",others,Valid,336,13,0.4158019,0.110223,0.263476999
+ups battery error,power supply and converter,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: ups battery error
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+power supply and converter - Maintenance work related to the power supply and converter of the wind turbine. Prefer this when the power supply or converter is involved, even if it also involves other electrical components.  keywords:  power,supply,converter,ups,skii,skii-pack,vcs,skiip
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""power supply and converter""
+}",power supply and converter,Valid,313,17,0.4842212,0.111835,0.329011
+investigate ups fault-battery error,power supply and converter,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: investigate ups fault-battery error
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+sensors - Maintenance work and fault involved with sensors and measurements. This label is prioritized for maintenance work that involves sensors or measurement devices, even if the sensor belongs to a different component.  keywords:  sensor,measurement,transducer,counter,cms,accelerometer,temperature,level
+power supply and converter - Maintenance work related to the power supply and converter of the wind turbine. Prefer this when the power supply or converter is involved, even if it also involves other electrical components.  keywords:  power,supply,converter,ups,skii,skii-pack,vcs,skiip
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""power supply and converter""
+}",power supply and converter,Valid,309,16,0.4351785,0.108285,0.282073
+feedback error offline pump ,pumps and motors,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: feedback error offline pump 
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+pumps and motors - Maintenance work related to the pumps and motors in the wind turbine. This label should be used when the maintenance work mainly involves pumps or motors, but not when it involves other components.  keywords:  pump,motor
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+control system - Maintenance work related to the controls of the wind turbine. Prefer this label when the control of wind turbine is involved, especially when it involves software or communication aspects.  keywords:  control,ctrl,frequency,logic,synchronize,communication,software,upgrade,controller,module,feedback
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""pumps and motors"" }",pumps and motors,Valid,297,17,0.496347,0.105514,0.350546
+replacement of offline filter pump unit,pumps and motors,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: replacement of offline filter pump unit
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+pumps and motors - Maintenance work related to the pumps and motors in the wind turbine. This label should be used when the maintenance work mainly involves pumps or motors, but not when it involves other components.  keywords:  pump,motor
+control system - Maintenance work related to the controls of the wind turbine. Prefer this label when the control of wind turbine is involved, especially when it involves software or communication aspects.  keywords:  control,ctrl,frequency,logic,synchronize,communication,software,upgrade,controller,module,feedback
+generator - Maintenance work related to the generator of the wind turbine. Prefer this when the generator is involved, even if it involves subcomponents that are part of the generator.  keywords:  generator,rotor,bearing
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""pumps and motors"" }",pumps and motors,Valid,298,16,0.4679979,0.105889,0.322763
+replace damaged access step,safety,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: replace damaged access step
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+tower and foundation - Maintenance work related to tower and foundation structures of the wind turbine. Prefer this label even if it also involves other components such as electrical components or yaw platforms.  keywords:  tower,foundation,monopile,platforms
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""tower and foundation""
+}",tower and foundation,Valid,341,16,0.4393403,0.113,0.285202
+survival kit,safety,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: survival kit
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+tower and foundation - Maintenance work related to tower and foundation structures of the wind turbine. Prefer this label even if it also involves other components such as electrical components or yaw platforms.  keywords:  tower,foundation,monopile,platforms
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""safety"" }",safety,Valid,339,11,0.377777,0.112278,0.223084
+3 months service ,scheduled,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: 3 months service 
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+scheduled - Maintenance work and inspections that have been scheduled or planned, either by the operator, preventive maintenance or 3rd party. Any punch list, annual services, main services and third party inspections should be labelled as scheduled.  keywords:  punch,list,annual,service,llyod,audits
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""scheduled"" }",scheduled,Valid,356,11,0.3848164,0.113455,0.225015
+24 months service ,scheduled,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: 24 months service 
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+scheduled - Maintenance work and inspections that have been scheduled or planned, either by the operator, preventive maintenance or 3rd party. Any punch list, annual services, main services and third party inspections should be labelled as scheduled.  keywords:  punch,list,annual,service,llyod,audits
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""scheduled"" }",scheduled,Valid,357,11,0.3779674,0.11388,0.221258
+replace faulty ft sensor,sensors,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: replace faulty ft sensor
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+sensors - Maintenance work and fault involved with sensors and measurements. This label is prioritized for maintenance work that involves sensors or measurement devices, even if the sensor belongs to a different component.  keywords:  sensor,measurement,transducer,counter,cms,accelerometer,temperature,level
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""sensors""
+}",sensors,Valid,351,14,0.4160027,0.109904,0.261716
+cms system non function,sensors,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: cms system non function
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+pitch and hydraulic - Maintenance work related to the pitch system and hydraulic system of the wind turbine. Prefer this when hydraulic oil, hydraulic pumps and brakes are involved, even if it also involves other components.  keywords:  hydraulic,pitch,valve,brake
+sensors - Maintenance work and fault involved with sensors and measurements. This label is prioritized for maintenance work that involves sensors or measurement devices, even if the sensor belongs to a different component.  keywords:  sensor,measurement,transducer,counter,cms,accelerometer,temperature,level
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""yaw system""
+}",yaw system,Valid,296,14,0.4133394,0.106749,0.263353999
+service lift bracket mid tower exchange,tower and foundation,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: service lift bracket mid tower exchange
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+tower and foundation - Maintenance work related to tower and foundation structures of the wind turbine. Prefer this label even if it also involves other components such as electrical components or yaw platforms.  keywords:  tower,foundation,monopile,platforms
+scheduled - Maintenance work and inspections that have been scheduled or planned, either by the operator, preventive maintenance or 3rd party. Any punch list, annual services, main services and third party inspections should be labelled as scheduled.  keywords:  punch,list,annual,service,llyod,audits
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""tower and foundation""
+}",tower and foundation,Valid,321,16,0.431377,0.106325,0.285466
+tower light halfway defect,tower and foundation,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: tower light halfway defect
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+tower and foundation - Maintenance work related to tower and foundation structures of the wind turbine. Prefer this label even if it also involves other components such as electrical components or yaw platforms.  keywords:  tower,foundation,monopile,platforms
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""others""
+}",others,Valid,341,14,0.4160224,0.112609,0.260884
+transformer inspection ,transformer,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: transformer inspection 
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+transformer - Maintenance work related to the transformer of the wind turbine. Prefer this when the transformer is involved, even if it also involves other components such as electrical parts or ventilation.  keywords:  transformer,traf,trafo
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""transformer""
+}",transformer,Valid,337,14,0.4095583,0.107795,0.2581
+replace mutlivolt transformer,transformer,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: replace mutlivolt transformer
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+transformer - Maintenance work related to the transformer of the wind turbine. Prefer this when the transformer is involved, even if it also involves other components such as electrical parts or ventilation.  keywords:  transformer,traf,trafo
+others - This label is used when the maintenance work does not fit into any of the other categories, or when the category cannot be determined from the text. This label should only be used when the maintenance work cannot be classified into any of the other categories, or when the text is too vague to determine the category. Avoid using this label if there is any indication of a specific category in the text.  keywords:  
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+""predicted_label"": ""transformer""
+}",transformer,Valid,339,13,0.427827,0.109544,0.27561
+yaw gear breathers/top cont door repair,yaw system,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: yaw gear breathers/top cont door repair
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+gearbox - Maintenance work related to the gearbox of the wind turbine. Prefer this when the gearbox is involved, even if it also involves other components such as pumps or oil.  keywords:  gearbox,gear,swarf,gear oil
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{ ""predicted_label"": ""yaw system"" }",yaw system,Valid,306,12,0.3853488,0.105827,0.235832
+replace damaged yaw deck ladder,yaw system,"You are a strict maintenance category classifier.
+Your task is to classify the maintenance work texts based on their maintenance category.
+
+Text: replace damaged yaw deck ladder
+Allowed categories: ['blades', 'control system', 'electrical components', 'gearbox', 'generator', 'grease, oil and coolant', 'heaters and coolers', 'hub', 'others', 'pitch and hydraulic', 'power supply and converter', 'pumps and motors', 'safety', 'scheduled', 'sensors', 'tower and foundation', 'transformer', 'yaw system']
+Additional context:
+yaw system - Maintenance work related to the yaw system of the wind turbine. Prefer this when the yaw system is involved, even if it also involves other components such as temperature error or motors.  keywords:  yaw
+tower and foundation - Maintenance work related to tower and foundation structures of the wind turbine. Prefer this label even if it also involves other components such as electrical components or yaw platforms.  keywords:  tower,foundation,monopile,platforms
+safety - Maintenance work related to the safety features of the wind turbine internal or external structures. Prefer this label when the work involves the repair or maintenance of safety features surrounding the wind turbine, even if electrical components were involved.  keywords:  safety,guide,support,emergency,light,rail,kit,access,aid
+Return ONLY one of the category labels without any explanations or additional text.","{
+  ""predicted_label"": ""yaw system""
+}",yaw system,Valid,301,15,0.4216758,0.108218,0.269181
